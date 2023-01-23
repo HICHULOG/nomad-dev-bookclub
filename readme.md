@@ -1,4 +1,4 @@
-#IT 5min dictionary :book: 
+#IT 5min dictionary 
 
 It's Reading challenge: Read books that Developer must-read.
 
