@@ -11,15 +11,32 @@
         flex-direction: column;
         align-items: center;
       }
-      div > img {
+
+      .bookcover {
+        position: relative;
+      }
+
+      .bookcover > a {
         padding: 20px;
         margin-top: 40px;
         background-color: rgb(241, 234, 220);
         transition: all 0.2s ease-in-out;
+        cursor: pointer;
       }
-      div > img:hover {
+      div > a:hover {
         padding: 0;
         scale: 1.2;
+      }
+
+      .pop-message {
+        position: absolute;
+        background-color: #3978be;
+        color: white;
+        padding: 20px;
+        border-radius: 25px;
+        border-bottom-left-radius: 0;
+        top: -20px;
+        right: -150px;
       }
     </style>
   </head>
@@ -27,7 +44,15 @@
     <div>
       <h1>Nomad Dev Bookclub</h1>
       <h2>Book: IT 5min Dictionary</h2>
-      <img src="https://tinyurl.com/2myhkqlb" alt="book-image" />
+      <div class="bookcover">
+        <a href="plan.html"
+          ><img src="https://tinyurl.com/2myhkqlb" alt="bookcover-image"
+        /></a>
+        <div class="pop-message">
+          <span>Click this book!!</span>
+          <span>My plan will appear ;n)</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>
